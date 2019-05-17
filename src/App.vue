@@ -64,10 +64,10 @@ export default {
         }
       ],
       info: [
-        { name: '杂费', value: 345, color: '#E6E6FA' },
-        { name: '购物', value: 422, color: '#B0C4DE' },
-        { name: '日常饮食', value: 300, color: '#6495ED' },
-        { name: '医药', value: 567, color: '#4169E1' },
+        { name: '杂费', value: 456, color: '#E6E6FA' },
+        { name: '购物', value: 678, color: '#B0C4DE' },
+        { name: '日常饮食', value: 1245, color: '#6495ED' },
+        { name: '医药', value: 342, color: '#4169E1' },
         { name: '交通', value: 1289, color: '#000080' }
       ]
     }
