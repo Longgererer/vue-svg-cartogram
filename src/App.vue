@@ -9,20 +9,24 @@
       ></circularChart>
     </div>
     <div>
-      <pieChart :info="info"></pieChart>
+      <pieChart :info="pieInfo"></pieChart>
     </div>
-    <div></div>
+    <div>
+      <barChart :info="barChart"></barChart>
+    </div>
   </div>
 </template>
 
 <script>
 import circularChart from './components/circularChart'
 import pieChart from './components/pieChart'
+import barChart from './components/barChart'
 export default {
   name: 'App',
   components: {
     circularChart,
-    pieChart
+    pieChart,
+    barChart
   },
   data() {
     return {
@@ -63,12 +67,15 @@ export default {
           percent: 76
         }
       ],
-      info: [
+      pieInfo: [
         { name: '杂费', value: 456, color: '#E6E6FA' },
         { name: '购物', value: 678, color: '#B0C4DE' },
         { name: '日常饮食', value: 1245, color: '#6495ED' },
         { name: '医药', value: 342, color: '#4169E1' },
         { name: '交通', value: 1289, color: '#000080' }
+      ],
+      barInfo: [
+        {name: '1月', value: 120},
       ]
     }
   }
